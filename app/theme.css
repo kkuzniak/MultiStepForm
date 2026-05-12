@@ -1,0 +1,59 @@
+@theme {
+  /* Colors */
+  --color-grey-500: #9699AA;
+
+  --color-orange-300: #FFAF7E;
+
+  --color-red-500: #EE374A;
+  --color-red-450: #E96170;
+  --color-red-400: #F9818E;
+
+  --color-purple-600: #483EFF;
+  --color-purple-500: #6259FF;
+  --color-purple-400: #928CFF;
+  --color-purple-200: #D6D9E6;
+
+  --color-blue-950: #022959;
+  --color-blue-700: #164A8A;
+  --color-blue-300: #ABBCFF;
+  --color-blue-200: #BEE2FD;
+  --color-blue-100: #EFF5FF;
+  --color-blue-50: #F8F9FF;
+
+  /* Typography */
+  --text-preset1: 2rem;
+  --text-preset1--font-weight: 700;
+  --text-preset1--line-height: 120%;
+
+  --text-preset2: 1.5rem;
+  --text-preset2--font-weight: 700;
+  --text-preset2--line-height: 120%;
+
+  --text-preset3-medium: 1rem;
+  --text-preset3-medium--font-weight: 500;
+  --text-preset3-medium--line-height: 120%;
+
+  --text-preset3-regular: 1rem;
+  --text-preset3-regular--font-weight: 400;
+  --text-preset3-regular--line-height: 150%;
+
+  --text-preset4-bold: 0.875rem;
+  --text-preset4-bold--font-weight: 700;
+  --text-preset4-bold--line-height: 120%;
+  --text-preset4-bold--letter-spacing: 0.01rem;
+
+  --text-preset4-medium: 0.875rem;
+  --text-preset4-medium--font-weight: 500;
+  --text-preset4-medium--line-height: 150%;
+
+  --text-preset4-regular: 0.875rem;
+  --text-preset4-regular--font-weight: 400;
+  --text-preset4-regular--line-height: 120%;
+
+  --text-preset5: 0.75rem;
+  --text-preset5--font-weight: 400;
+  --text-preset5--line-height: 120%;
+
+  /* Shadows */
+  --shadow-md: 0px 25px 40px -20px rgba(0, 0, 0, 0.095);
+}

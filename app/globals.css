@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import './theme.css';
+
+:root {
+  --background: var(--colors-blue-100);
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--colors-blue-100);
+  --color-foreground: var(--foreground);
+  --font-ubuntu: var(--font-ubuntu);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: var(--colors-blue-100);
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-ubuntu);
+}
