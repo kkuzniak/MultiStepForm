@@ -2,7 +2,7 @@ type Props = {
   className?: string;
 };
 
-const StepsBackground = ({ className }: Props) => (
+const StepperBackground = ({ className }: Props) => (
   <svg
     className={className}
     width="274"
@@ -65,4 +65,4 @@ const StepsBackground = ({ className }: Props) => (
   </svg>
 );
 
-export { StepsBackground };
+export { StepperBackground };

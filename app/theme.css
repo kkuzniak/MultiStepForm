@@ -29,26 +29,26 @@
   --text-preset2--font-weight: 700;
   --text-preset2--line-height: 120%;
 
+  --text-preset3: 1rem;
+  --text-preset3--font-weight: 400;
+  --text-preset3--line-height: 150%;
+
   --text-preset3-medium: 1rem;
   --text-preset3-medium--font-weight: 500;
   --text-preset3-medium--line-height: 120%;
 
-  --text-preset3-regular: 1rem;
-  --text-preset3-regular--font-weight: 400;
-  --text-preset3-regular--line-height: 150%;
-
-  --text-preset4-bold: 0.875rem;
-  --text-preset4-bold--font-weight: 700;
-  --text-preset4-bold--line-height: 120%;
-  --text-preset4-bold--letter-spacing: 0.01rem;
+  --text-preset4: 0.875rem;
+  --text-preset4--font-weight: 400;
+  --text-preset4--line-height: 120%;
 
   --text-preset4-medium: 0.875rem;
   --text-preset4-medium--font-weight: 500;
   --text-preset4-medium--line-height: 150%;
 
-  --text-preset4-regular: 0.875rem;
-  --text-preset4-regular--font-weight: 400;
-  --text-preset4-regular--line-height: 120%;
+  --text-preset4-bold: 0.875rem;
+  --text-preset4-bold--font-weight: 700;
+  --text-preset4-bold--line-height: 120%;
+  --text-preset4-bold--letter-spacing: 0.01rem;
 
   --text-preset5: 0.75rem;
   --text-preset5--font-weight: 400;
