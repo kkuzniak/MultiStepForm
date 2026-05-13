@@ -1,4 +1,4 @@
-import { Form } from "@/features/onboarding/components/form";
+import { Form } from '@/features/onboarding/components/form';
 
 export default function Home() {
   return (

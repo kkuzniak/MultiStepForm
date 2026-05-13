@@ -4,10 +4,7 @@ import { extendTailwindMerge } from 'tailwind-merge';
 const twMergeConfig = {
   extend: {
     theme: {
-      text: [
-        (str: string) =>
-          /preset4-bold/.test(str)
-      ],
+      text: [(str: string) => /preset4-bold/.test(str)],
       // color: [
       //   (str: string) => ''
       //     //.test(

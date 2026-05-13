@@ -1,16 +1,16 @@
-import type { Metadata } from "next";
-import { Ubuntu } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Ubuntu } from 'next/font/google';
+import './globals.css';
 
 const ubuntu = Ubuntu({
-  variable: "--font-ubuntu",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "700"],
+  variable: '--font-ubuntu',
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '700'],
 });
 
 export const metadata: Metadata = {
-  title: "Multi Step Form",
-  description: "Multi Step Form Example",
+  title: 'Multi Step Form',
+  description: 'Multi Step Form Example',
 };
 
 export default function RootLayout({
@@ -19,10 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${ubuntu.variable} h-full antialiased`}
-    >
+    <html lang="en" className={`${ubuntu.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

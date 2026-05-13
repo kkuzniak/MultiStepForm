@@ -1,4 +1,4 @@
-import { Steps } from "./steps/steps";
+import { Steps } from './steps/steps';
 
 const Form = () => {
   return (
@@ -6,7 +6,9 @@ const Form = () => {
       <Steps />
       <div className="h-full flex-1 pt-12 pl-21">
         <h1 className="text-preset1 mb-2">Personal info</h1>
-        <p className="text-preset3 text-grey-500 mb-10">Please provide your name, email address, and phone number.</p>
+        <p className="text-preset3 text-grey-500 mb-10">
+          Please provide your name, email address, and phone number.
+        </p>
       </div>
     </div>
   );
