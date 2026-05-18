@@ -3,17 +3,21 @@
 import { cn } from '@/utils/cn';
 
 type Props = {
-  type: 'primary' | 'secondary';
   onClick: () => void;
   label: string;
+  type?: 'primary' | 'secondary';
   className?: string;
 };
 
-const Button = ({ onClick, label, className }: Props) => {
+const Button = ({ onClick, label, className, type = 'primary' }: Props) => {
   return (
     <button
       className={cn(
-        'bg-blue-950 text-preset3-medium text-white px-6.25 py-3.5 rounded-lg cursor-pointer',
+        'text-preset3-medium rounded-lg cursor-pointer',
+        {
+          'bg-blue-950 text-white px-6.25 py-3.5': type === 'primary',
+          'text-grey-500': type === 'secondary',
+        },
         className,
       )}
       onClick={onClick}
