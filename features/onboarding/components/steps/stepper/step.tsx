@@ -17,14 +17,14 @@ const Step = ({ number, title, selected = false }: Props) => {
       >
         <p
           className={cn(
-            'text-preset4-bold uppercase text-white',
-            selected && 'text-blue-950',
+            'text-preset4-bold uppercase',
+            !selected && 'text-white',
           )}
         >
           {number}
         </p>
       </div>
-      <div>
+      <div className="hidden md:flex md:flex-col">
         <header className="text-preset5 text-blue-300 uppercase">
           {`Step ${number}`}
         </header>

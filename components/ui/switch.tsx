@@ -15,13 +15,13 @@ const Switch = ({ leftLabel, rightLabel }: Props) => {
   };
 
   return (
-    <div className="flex items-center justify-between gap-x-6 text-preset4-bold text-grey-500">
+    <div className="flex items-center justify-between gap-x-6 text-preset4-bold">
       {leftLabel ? (
         <label
           htmlFor="switch"
           className={cn(
             'transition-colors duration-200',
-            !checked && 'text-blue-950',
+            checked && 'text-grey-500',
           )}
         >
           {leftLabel}
@@ -41,7 +41,7 @@ const Switch = ({ leftLabel, rightLabel }: Props) => {
           htmlFor="switch"
           className={cn(
             'transition-colors duration-200',
-            checked && 'text-blue-950',
+            !checked && 'text-grey-500',
           )}
         >
           {rightLabel}

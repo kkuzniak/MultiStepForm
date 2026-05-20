@@ -37,6 +37,10 @@
   --text-preset3-medium--font-weight: 500;
   --text-preset3-medium--line-height: 120%;
 
+  --text-preset3-bold: 1rem;
+  --text-preset3-bold--font-weight: 700;
+  --text-preset3-bold--line-height: 120%;
+
   --text-preset4: 0.875rem;
   --text-preset4--font-weight: 400;
   --text-preset4--line-height: 120%;
@@ -53,6 +57,10 @@
   --text-preset5: 0.75rem;
   --text-preset5--font-weight: 400;
   --text-preset5--line-height: 120%;
+
+  --text-preset6: 1.25rem;
+  --text-preset6--font-weight: 700;
+  --text-preset6--line-height: 120%;
 
   /* Shadows */
   --shadow-md: 0px 25px 40px -20px rgba(0, 0, 0, 0.095);

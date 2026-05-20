@@ -10,9 +10,10 @@ const Step2 = () => {
   return (
     <div className="w-full">
       <ToggleGroup
-        className="w-full flex flex-row items-center justify-between gap-x-4.5 mb-8"
+        className="w-full flex flex-col items-center justify-between gap-y-2 mb-8 lg:flex-row lg:gap-x-4.5"
         itemClassName={cn(
-          'flex-1 h-40 rounded-lg border px-4 py-4.5 flex flex-col items-start cursor-pointer transition-colors duration-200',
+          'w-full h-20 rounded-lg border px-4 py-5 flex flex-row items-start gap-x-4 cursor-pointer',
+          'lg:h-40 lg:flex-col lg:flex-1 lg:py-4.5',
           'data-[state=on]:border-purple-600 data-[state=on]:bg-purple-50',
           'data-[state=off]:border-purple-200 data-[state=off]:bg-white',
         )}

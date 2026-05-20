@@ -4,12 +4,12 @@ type Props = {
 
 const StepperBackground = ({ className }: Props) => (
   <svg
-    className={className}
     width="274"
     height="568"
     viewBox="0 0 274 568"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    className={className}
   >
     <rect width="274" height="568" rx="10" fill="#483EFF" />
     <mask

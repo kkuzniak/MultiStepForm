@@ -1,11 +1,15 @@
 import { Form } from '@/features/onboarding/components/form';
+import { cn } from '@/utils/cn';
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-blue-100 font-ubuntu dark:bg-blue-100">
-      <main className="size-full flex items-center justify-center">
-        <Form />
-      </main>
-    </div>
+    <main
+      className={cn(
+        'size-full flex flex-col flex-1 items-center justify-start px-4 bg-blue-100 font-ubuntu dark:bg-blue-100',
+        'md:justify-center md:px-10',
+      )}
+    >
+      <Form />
+    </main>
   );
 }

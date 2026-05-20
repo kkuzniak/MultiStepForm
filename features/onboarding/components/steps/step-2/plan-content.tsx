@@ -8,8 +8,10 @@ const PlanContent = ({ icon, name, price }: Props) => {
   return (
     <>
       {icon}
-      <h3 className="text-preset3-medium text-blue-950 mt-auto">{name}</h3>
-      <p className="text-preset4 text-grey-500">{`$${price}/mo`}</p>
+      <div className="flex flex-col items-start mt-auto">
+        <h3 className="text-preset3-medium">{name}</h3>
+        <p className="text-preset4 text-grey-500">{`$${price}/mo`}</p>
+      </div>
     </>
   );
 };
