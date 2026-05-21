@@ -11,7 +11,8 @@ const OptionCard = ({ children, className }: Props) => {
   return (
     <CheckboxPrimitive.Root
       className={cn(
-        'w-full px-6 py-4.5 rounded-lg border border-purple-200 cursor-pointer flex flex-row items-center gap-x-6',
+        'w-full px-4 py-3 rounded-lg border border-purple-200 cursor-pointer flex flex-row items-center gap-x-4',
+        'md:px-6 md:py-4.75 md:gap-x-6',
         'data-[state=checked]:border-purple-600 data-[state=checked]:bg-blue-50 data-[state=checked]:[&>div]:bg-purple-600 data-[state=checked]:[&>div]:border-purple-600',
         className,
       )}

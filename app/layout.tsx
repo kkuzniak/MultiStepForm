@@ -20,7 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${ubuntu.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <main className="size-full flex flex-col flex-1 items-center justify-start px-4 bg-blue-100 font-ubuntu dark:bg-blue-100 md:justify-center md:px-10">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }

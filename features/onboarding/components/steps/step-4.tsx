@@ -16,13 +16,15 @@ const Step4 = () => {
 
   return (
     <>
-      <div className="w-full bg-blue-50 py-5.5 px-6 rounded-lg text-preset4 mb-8">
+      <div className="w-full bg-blue-50 px-4 py-3.25 rounded-lg text-preset4 mb-6 md:mb-8 md:py-5.5 md:px-4.25">
         <header className="flex items-center justify-between mb-4 pb-4 border-b border-blue-200">
           <div>
-            <h3 className="text-preset3-medium mb-2">{planName}</h3>
+            <h3 className="text-preset4-medium md:mb-2 md:text-preset3-medium">
+              {planName}
+            </h3>
             <p className="text-grey-500">Change</p>
           </div>
-          <p className="text-preset3-bold">{`$${planPrice}/mo`}</p>
+          <p className="text-preset4-bold md:text-preset3-bold">{`$${planPrice}/mo`}</p>
         </header>
         <div className="flex flex-col gap-y-4">
           {addons.map(({ name, price }) => (
@@ -33,9 +35,9 @@ const Step4 = () => {
           ))}
         </div>
       </div>
-      <div className="w-full flex items-center justify-between px-6">
+      <div className="w-full flex items-center justify-between px-4 md:px-6">
         <p className="text-grey-500 text-preset4"> Total (per month)</p>
-        <p className="text-preset6 text-purple-600">{`+$${total}/mo`}</p>
+        <p className="text-preset3-bold text-purple-600 md:text-preset6">{`+$${total}/mo`}</p>
       </div>
     </>
   );

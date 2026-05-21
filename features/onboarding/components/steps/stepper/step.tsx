@@ -1,3 +1,5 @@
+'use client';
+
 import { cn } from '@/utils/cn';
 
 type Props = {
@@ -8,7 +10,7 @@ type Props = {
 
 const Step = ({ number, title, selected = false }: Props) => {
   return (
-    <div className="flex flex-row items-center gap-x-4 cursor-pointer">
+    <div className="flex flex-row items-center gap-x-4">
       <div
         className={cn(
           'size-8.25 rounded-full bg-transparent border border-white flex items-center justify-center',

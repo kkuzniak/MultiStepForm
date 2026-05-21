@@ -2,7 +2,7 @@ import { Input } from '@/components/ui/input';
 
 const Step1 = () => {
   return (
-    <div className="w-full flex flex-col gap-y-6">
+    <div className="w-full flex flex-col gap-y-4 md:gap-y-6">
       <Input
         id="name"
         type="text"

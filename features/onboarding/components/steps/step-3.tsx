@@ -23,15 +23,17 @@ const ADDONS = [
 
 const Step3 = () => {
   return (
-    <div className="w-full flex flex-col gap-y-4">
+    <div className="w-full flex flex-col gap-y-2 md:gap-y-4">
       {ADDONS.map(({ id, name, description, price }) => (
         <OptionCard key={id}>
           <label
             htmlFor="online-service"
-            className="w-full flex flex-row items-center justify-between text-preset4"
+            className="w-full flex flex-row items-center justify-between text-preset5 md:text-preset4"
           >
-            <header className="flex flex-col gap-y-2 items-start text-preset4">
-              <h3 className="text-preset3-medium">{name}</h3>
+            <header className="flex flex-col items-start md:gap-y-2">
+              <h3 className="text-preset4-medium md:text-preset3-medium">
+                {name}
+              </h3>
               <p className="text-grey-500">{description}</p>
             </header>
             <p className="text-purple-600">{`+$${price}/mo`}</p>

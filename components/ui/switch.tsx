@@ -15,19 +15,18 @@ const Switch = ({ leftLabel, rightLabel }: Props) => {
   };
 
   return (
-    <div className="flex items-center justify-between gap-x-6 text-preset4-bold">
+    <div className="flex items-center justify-between text-preset4-bold [&>*]:cursor-pointer">
       {leftLabel ? (
         <label
           htmlFor="switch"
           className={cn(
-            'transition-colors duration-200',
+            'transition-colors duration-200 pr-6',
             checked && 'text-grey-500',
           )}
         >
           {leftLabel}
         </label>
       ) : null}
-
       <SwitchPrimitive.Root
         className="relative w-9.5 h-5 px-1 bg-blue-950 rounded-[10px]"
         id="switch"
@@ -40,7 +39,7 @@ const Switch = ({ leftLabel, rightLabel }: Props) => {
         <label
           htmlFor="switch"
           className={cn(
-            'transition-colors duration-200',
+            'transition-colors duration-200 pl-6',
             !checked && 'text-grey-500',
           )}
         >
