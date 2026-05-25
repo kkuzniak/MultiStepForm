@@ -31,7 +31,6 @@ const Step2 = () => {
           'focus-visible:outline-none focus-visible:border-transparent focus-visible:ring-2 focus-visible:ring-blue-500',
         )}
         items={plans}
-        type="single"
       />
       <div className="w-full bg-blue-50 h-12 flex items-center justify-center">
         <Switch

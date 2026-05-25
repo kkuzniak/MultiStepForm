@@ -8,7 +8,6 @@ type Props<T extends FieldValues> = {
     content: React.ReactNode;
     value: string;
   }[];
-  type: 'single' | 'multiple';
   className?: string;
   itemClassName?: string;
 };
@@ -18,7 +17,6 @@ const ToggleGroup = <T extends FieldValues>({
   control,
   className,
   items,
-  type,
   itemClassName,
 }: Props<T>) => {
   return (
@@ -37,7 +35,7 @@ const ToggleGroup = <T extends FieldValues>({
         return (
           <ToggleGroupPrimitive.Root
             className={className}
-            type={type}
+            type="single"
             value={field.value}
             onValueChange={handleChange}
             rovingFocus={false}
