@@ -1,9 +1,8 @@
 import { Button } from '@/components/ui/button';
 import { cn } from '@/utils/cn';
-import { StepKey } from '../../types/form';
 
 type Props = {
-  currentStep: StepKey;
+  currentStep: number;
   handleGoBack: () => void;
   handleNextStep: () => void;
   isLastStep: boolean;
@@ -15,7 +14,7 @@ const FormNavigationButtons = ({
   handleNextStep,
   isLastStep,
 }: Props) => {
-  const isFirstStep = currentStep === 'step-1';
+  const isFirstStep = currentStep === 1;
 
   return (
     <div

@@ -1,5 +1,5 @@
-import { Form } from '@/features/onboarding/components/form/form';
+import { redirect } from 'next/navigation';
 
 export default function Home() {
-  return <Form />;
+  redirect('/apply/1');
 }

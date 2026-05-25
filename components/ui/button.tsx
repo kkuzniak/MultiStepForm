@@ -18,7 +18,11 @@ const Button = ({ onClick, label, className, type = 'primary' }: Props) => {
         {
           'bg-blue-950 text-white w-24.25 h-10 hover:bg-blue-700 active:bg-blue-700 transition-colors duration-200 md:w-30.75 md:h-12':
             type === 'primary',
+          'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500':
+            type === 'primary',
           'text-grey-500 hover:text-blue-950 active:text-blue-950':
+            type === 'secondary',
+          'focus-visible:rounded-xs focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-3':
             type === 'secondary',
         },
         className,

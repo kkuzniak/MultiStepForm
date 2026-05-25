@@ -1,8 +1,16 @@
+'use client';
+
+import { useEffect } from 'react';
 import { HeartIcon } from '@/components/icons/heart-icon';
 import { Stepper } from '@/features/onboarding/components/steps/stepper/stepper';
+import { clearFormData } from '@/lib/formStore';
 import { cn } from '@/utils/cn';
 
 export default function SuccessPage() {
+  useEffect(() => {
+    clearFormData();
+  }, []);
+
   return (
     <div
       className={cn(
@@ -11,7 +19,7 @@ export default function SuccessPage() {
         'lg:mx-auto',
       )}
     >
-      <Stepper currentStep="step-4" />
+      <Stepper currentStep={4} />
       <div
         className={cn(
           'flex flex-col items-center justify-center bg-white z-100 px-6 py-20.5',
