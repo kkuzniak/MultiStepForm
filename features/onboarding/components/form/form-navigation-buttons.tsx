@@ -19,7 +19,7 @@ const FormNavigationButtons = ({
   return (
     <div
       className={cn(
-        'fixed bottom-0 left-0 bg-white h-18 w-full justify-between mt-auto flex items-center p-4 shadow-md',
+        'fixed bottom-0 left-0 bg-white h-18 w-full justify-between mt-auto flex items-center p-4 shadow-md z-200',
         'md:relative md:p-0 md:shadow-none',
         isFirstStep && 'justify-end',
       )}
