@@ -49,7 +49,7 @@ const OptionCard = <T extends FieldValues>({
             className={cn(
               'w-full px-4 py-3 rounded-lg border border-purple-200 flex flex-row items-center gap-x-4 cursor-pointer hover:border-purple-600',
               'md:px-6 md:py-4.75 md:gap-x-6',
-              'data-[state=checked]:border-purple-600 data-[state=checked]:bg-blue-50 data-[state=checked]:[&>div:first-child]:bg-purple-600 data-[state=checked]:[&>div:first-child]:border-purple-600',
+              'data-[state=checked]:border-purple-600 data-[state=checked]:bg-blue-50 data-[state=checked]:[&>div:first-child]:bg-purple-600 data-[state=checked]:[&>div:first-child]:border-purple-600 data-[state=checked]:focus-visible:border-transparent',
               'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:border-transparent',
               className,
             )}

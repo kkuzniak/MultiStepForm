@@ -26,9 +26,9 @@ const Step2 = () => {
           'w-full rounded-lg border px-4 py-3 flex flex-row items-start gap-x-4 cursor-pointer',
           'md:py-5',
           'lg:h-40 lg:flex-col lg:flex-1 lg:py-4.5',
-          'data-[state=on]:border-purple-600 data-[state=on]:bg-purple-50',
-          'data-[state=off]:border-purple-200 data-[state=off]:bg-white data-[state=off]:hover:border-purple-600',
-          'focus-visible:outline-none focus-visible:border-transparent focus-visible:ring-2 focus-visible:ring-blue-500',
+          'data-[state=on]:border-purple-600 data-[state=on]:bg-purple-50 data-[state=on]:focus-visible:border-transparent',
+          'data-[state=off]:border-purple-200 data-[state=off]:bg-white data-[state=off]:hover:border-purple-600 data-[state=off]:focus-visible:border-transparent',
+          'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500',
         )}
         items={plans}
       />

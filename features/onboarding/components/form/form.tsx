@@ -6,7 +6,10 @@ import { useEffect } from 'react';
 import { FormProvider, useForm } from 'react-hook-form';
 import z from 'zod';
 import { STEPS } from '@/features/onboarding/constants';
-import { getFormData, saveFormData } from '@/lib/formStore';
+import {
+  getFormData,
+  saveFormData,
+} from '@/features/onboarding/lib/form-store/client';
 import { cn } from '@/utils/cn';
 import { onboardingSchema } from '../../schemas/onboarding-schema';
 import { Stepper } from '../steps/stepper/stepper';
@@ -34,10 +37,11 @@ const Form = ({ step }: Props) => {
     },
   });
 
-  const { watch } = methods;
+  const { watch, trigger } = methods;
 
   const { title, description, component } = STEPS[step - 1];
 
+  const isFirstStep = step === 1;
   const isLastStep = step === STEPS.length;
 
   const handleGoBack = () => {
@@ -51,8 +55,17 @@ const Form = ({ step }: Props) => {
     router.push(`/apply/${previousStep + 1}`);
   };
 
-  const handleNextStep = () => {
+  const handleNextStep = async () => {
+    if (isFirstStep) {
+      const isValid = await trigger(['fullName', 'email', 'phone']);
+
+      if (!isValid) {
+        return;
+      }
+    }
+
     if (isLastStep) {
+      saveFormData({ success: true });
       router.push('/apply/success');
       return;
     }

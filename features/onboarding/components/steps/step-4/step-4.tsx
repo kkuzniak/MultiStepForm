@@ -47,7 +47,7 @@ const Step4 = () => {
               {planName}
             </h3>
             <Button
-              className="text-preset4 text-grey-500 hover:text-purple-600 md:text-preset4"
+              className="text-preset4 text-grey-500 bg-blue-50 hover:text-purple-600 md:text-preset4"
               onClick={handleChange}
               label="Change"
               type="secondary"

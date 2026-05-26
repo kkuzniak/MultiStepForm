@@ -6,7 +6,7 @@ const twMergeConfig = {
     theme: {
       text: [
         (str: string) =>
-          /preset1|preset2|preset3|preset3-medium|preset4|preset4-medium|preset4-bold|preset5/.test(
+          /preset1|preset2|preset3|preset3-medium|preset4|preset4-medium|preset4-bold|preset5|preset5-bold/.test(
             str,
           ),
       ],

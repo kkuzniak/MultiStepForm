@@ -59,6 +59,10 @@
   --text-preset5--font-weight: 400;
   --text-preset5--line-height: 120%;
 
+  --text-preset5-bold: 0.75rem;
+  --text-preset5-bold--font-weight: 700;
+  --text-preset5-bold--line-height: 120%;
+
   --text-preset6: 1.25rem;
   --text-preset6--font-weight: 700;
   --text-preset6--line-height: 120%;
