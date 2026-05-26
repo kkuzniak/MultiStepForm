@@ -83,7 +83,7 @@ const Form = ({ step }: Props) => {
   return (
     <div
       className={cn(
-        'w-full max-w-85.75 mt-24 rounded-[10px] bg-white overflow-hidden flex flex-col items-center shadow-md z-100',
+        'w-full max-w-85.75 mt-24 rounded-[10px] bg-white flex flex-col items-center shadow-md z-100',
         'md:max-w-235 md:mx-auto md:mt-0 md:h-150 md:rounded-[15px] md:flex-row',
         'lg:mx-auto',
       )}
@@ -91,7 +91,7 @@ const Form = ({ step }: Props) => {
       <Stepper currentStep={step} />
       <div
         className={cn(
-          'h-full px-6 py-8 flex flex-col bg-white z-100',
+          'h-full px-6 py-8 flex flex-col bg-white z-100 rounded-[10px]',
           'md:flex-1 md:px-14.5 md:pt-10.5 md:pb-8',
           'lg:py-12 lg:px-25',
         )}
