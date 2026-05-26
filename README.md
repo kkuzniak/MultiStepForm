@@ -10,12 +10,6 @@ Users move through four steps (personal details → plan → add-ons → summary
 
 https://multi-page-form-kkuzniak.netlify.app/
 
-```bash
-npm run dev
-```
-
-Then open [http://localhost:3000](http://localhost:3000) — you’ll be redirected to `/apply/1`.
-
 ---
 
 ## Frontend Mentor
