@@ -1,8 +1,6 @@
-type Props = {
-  className?: string;
-};
+import { SVGProps } from '@/components/types';
 
-const ArcadeIcon = ({ className }: Props) => {
+const ArcadeIcon = ({ ...props }: SVGProps) => {
   return (
     <svg
       width="40"
@@ -10,8 +8,10 @@ const ArcadeIcon = ({ className }: Props) => {
       viewBox="0 0 40 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={className}
+      aria-labelledby="arcade-icon-title"
+      {...props}
     >
+      <title id="arcade-icon-title">Arcade icon for the success page</title>
       <rect width="40" height="40" rx="20" fill="#FFAF7E" />
       <path
         fillRule="evenodd"

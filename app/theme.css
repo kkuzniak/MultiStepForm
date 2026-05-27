@@ -1,3 +1,5 @@
+/* Tailwind theme variables for the application based on the Figma design system. */
+
 @theme {
   /* Colors */
   --color-grey-500: #9699aa;

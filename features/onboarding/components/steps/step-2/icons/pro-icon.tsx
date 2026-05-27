@@ -1,8 +1,6 @@
-type Props = {
-  className?: string;
-};
+import { SVGProps } from '@/components/types';
 
-const ProIcon = ({ className }: Props) => {
+const ProIcon = ({ ...props }: SVGProps) => {
   return (
     <svg
       width="40"
@@ -10,8 +8,10 @@ const ProIcon = ({ className }: Props) => {
       viewBox="0 0 40 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={className}
+      aria-labelledby="pro-icon-title"
+      {...props}
     >
+      <title id="pro-icon-title">Pro icon for the success page</title>
       <rect width="40" height="40" rx="20" fill="#483EFF" />
       <path
         fillRule="evenodd"

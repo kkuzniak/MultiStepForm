@@ -3,6 +3,7 @@ import { FORM_DATA_COOKIE } from './constants';
 
 type FormData = Promise<Record<string, unknown> | null>;
 
+/* Server-side function to get the form data from the cookie. */
 export async function getServerFormData(): FormData {
   const cookieStore = await cookies();
   const value = cookieStore.get(FORM_DATA_COOKIE)?.value;

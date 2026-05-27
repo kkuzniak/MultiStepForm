@@ -1,3 +1,5 @@
+'use client';
+
 import { deleteCookie, getCookie, setCookie } from '@/lib/cookies';
 import { FORM_DATA_COOKIE, FORM_DATA_COOKIE_MAX_AGE } from './constants';
 

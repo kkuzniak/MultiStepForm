@@ -1,8 +1,6 @@
-type Props = {
-  className?: string;
-};
+import { SVGProps } from '@/components/types';
 
-const AdvancedIcon = ({ className }: Props) => {
+const AdvancedIcon = ({ ...props }: SVGProps) => {
   return (
     <svg
       width="40"
@@ -10,8 +8,10 @@ const AdvancedIcon = ({ className }: Props) => {
       viewBox="0 0 40 40"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className={className}
+      aria-labelledby="advanced-icon-title"
+      {...props}
     >
+      <title id="advanced-icon-title">Advanced icon for the success page</title>
       <rect width="40" height="40" rx="20" fill="#F9818E" />
       <path
         fillRule="evenodd"

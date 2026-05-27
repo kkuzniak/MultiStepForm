@@ -26,7 +26,7 @@ const Switch = <T extends FieldValues>({
           <div className="flex items-center justify-between text-preset4-bold [&>*]:cursor-pointer">
             {leftLabel ? (
               <label
-                htmlFor="switch"
+                htmlFor={name}
                 className={cn(
                   'transition-colors duration-200 pr-6',
                   checked && 'text-grey-500',
