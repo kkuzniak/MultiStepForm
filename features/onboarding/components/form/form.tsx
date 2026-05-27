@@ -92,8 +92,8 @@ const Form = ({ step }: Props) => {
       <div
         className={cn(
           'h-full px-6 py-8 flex flex-col bg-white z-100 rounded-[10px]',
-          'md:flex-1 md:px-14.5 md:pt-10.5 md:pb-8',
-          'lg:py-12 lg:px-25',
+          'md:flex-1 md:pl-10.5 md:pr-14.5 md:pt-10.75 md:pb-8',
+          'lg:pt-11.75 lg:pb-12 lg:pl-21 lg:pr-25',
         )}
       >
         <h1 className="text-preset2 mb-2 md:text-preset1">{title}</h1>

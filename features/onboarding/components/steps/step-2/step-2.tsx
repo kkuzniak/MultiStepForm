@@ -21,11 +21,11 @@ const Step2 = () => {
       <ToggleGroup
         name="plan"
         control={control}
-        className="w-full flex flex-col items-center justify-between gap-y-2 mb-8 lg:flex-row lg:gap-x-4.5"
+        className="w-full flex flex-col items-center justify-between gap-y-2 mb-6 lg:mb-8 lg:flex-row lg:gap-x-4.5"
         itemClassName={cn(
-          'w-full rounded-lg border px-4 py-3 flex flex-row items-start gap-x-4 cursor-pointer',
+          'w-full h-20 rounded-lg border px-4 flex flex-row items-center gap-x-4 cursor-pointer',
           'md:py-5',
-          'lg:h-40 lg:flex-col lg:flex-1 lg:py-4.5',
+          'lg:h-40 lg:flex-col lg:flex-1 lg:items-start lg:justify-between',
           'data-[state=on]:border-purple-600 data-[state=on]:bg-purple-50 data-[state=on]:focus-visible:border-transparent',
           'data-[state=off]:border-purple-200 data-[state=off]:bg-white data-[state=off]:hover:border-purple-600 data-[state=off]:focus-visible:border-transparent',
           'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500',
