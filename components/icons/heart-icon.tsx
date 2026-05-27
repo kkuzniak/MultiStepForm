@@ -1,4 +1,8 @@
-const HeartIcon = ({ ...props }) => {
+type Props = {
+  className?: string;
+};
+
+const HeartIcon = ({ className }: Props) => {
   return (
     <svg
       width="80"
@@ -6,7 +10,7 @@ const HeartIcon = ({ ...props }) => {
       viewBox="0 0 80 80"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      {...props}
+      className={className}
     >
       <circle cx="40" cy="40" r="40" fill="#F9818E" />
       <path

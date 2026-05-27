@@ -15,10 +15,12 @@ const SuccessContent = () => {
       await clearFormData();
     };
 
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
       clear();
       router.push('/apply/1');
     }, 5000);
+
+    return () => clearTimeout(timeout);
   }, []);
 
   return (

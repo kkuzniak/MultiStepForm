@@ -1,7 +1,7 @@
 export type Step = {
   title: string;
   description: string;
-  component: React.ReactNode;
+  component: React.ComponentType<unknown>;
   stepperTitle: string;
 };
 

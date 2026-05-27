@@ -19,7 +19,7 @@ const AddonRow = ({ id, name, description, price, control }: Props) => {
   return (
     <OptionCard key={id} fieldPath="addons" name={id} control={control}>
       <label
-        htmlFor="test"
+        htmlFor={id}
         className="w-full flex flex-row items-center justify-between text-preset5 md:text-preset4"
       >
         <header className="flex flex-col items-start md:gap-y-2">

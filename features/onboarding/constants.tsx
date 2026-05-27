@@ -9,25 +9,25 @@ export const STEPS: Step[] = [
     title: 'Personal info',
     stepperTitle: 'Your info',
     description: 'Please provide your name, email address, and phone number.',
-    component: <Step1 />,
+    component: Step1,
   },
   {
     title: 'Select your plan',
     stepperTitle: 'Select plan',
     description: 'You have the option of monthly or yearly billing.',
-    component: <Step2 />,
+    component: Step2,
   },
   {
     title: 'Pick add-ons',
     stepperTitle: 'Add-ons',
     description: 'Add-ons help enhance your gaming experience.',
-    component: <Step3 />,
+    component: Step3,
   },
   {
     title: 'Finishing up',
     stepperTitle: 'Summary',
     description: 'Double-check everything looks OK before confirming.',
-    component: <Step4 />,
+    component: Step4,
   },
 ];
 

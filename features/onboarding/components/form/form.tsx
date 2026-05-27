@@ -41,6 +41,8 @@ const Form = ({ step }: Props) => {
 
   const { title, description, component } = STEPS[step - 1];
 
+  const StepComponent = component;
+
   const isFirstStep = step === 1;
   const isLastStep = step === STEPS.length;
 
@@ -51,8 +53,7 @@ const Form = ({ step }: Props) => {
       return;
     }
 
-    const previousStep = currentStepNumber - 1;
-    router.push(`/apply/${previousStep + 1}`);
+    router.push(`/apply/${currentStepNumber}`);
   };
 
   const handleNextStep = async () => {
@@ -70,8 +71,7 @@ const Form = ({ step }: Props) => {
       return;
     }
 
-    const currentStepNumber = step + 1;
-    router.push(`/apply/${currentStepNumber}`);
+    router.push(`/apply/${step + 1}`);
   };
 
   useEffect(() => {
@@ -101,7 +101,9 @@ const Form = ({ step }: Props) => {
           {description}
         </p>
         <FormProvider {...methods}>
-          <form>{component}</form>
+          <form>
+            <StepComponent />
+          </form>
         </FormProvider>
         <FormNavigationButtons
           currentStep={step}

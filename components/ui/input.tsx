@@ -54,6 +54,8 @@ const Input = <T extends FieldValues>({
                 {label}
               </label>
               <p
+                id={`${name}-error`}
+                role="alert"
                 className={cn(
                   'text-preset5-bold text-red-500 opacity-0 transition-opacity duration-200 sm:text-preset4-bold',
                   hasErrors && 'opacity-100',
@@ -64,7 +66,8 @@ const Input = <T extends FieldValues>({
             </div>
             <input
               className={cn(
-                'h-10 bg-white px-4 text-preset4-medium rounded-lg border border-purple-200 focus:outline-none transition-colors duration-200',
+                'h-10 bg-white px-4 text-preset4-medium rounded-lg border border-purple-200 transition-colors duration-200',
+                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:border-transparent',
                 'md:h-12 md:text-preset3-medium',
                 'placeholder:text-grey-500',
                 hasErrors && 'border-red-500',
@@ -76,6 +79,10 @@ const Input = <T extends FieldValues>({
               id={name}
               onChange={handleChange}
               value={field.value}
+              required
+              aria-describedby={name}
+              aria-invalid={!!hasErrors}
+              aria-required="true"
             />
           </div>
         );

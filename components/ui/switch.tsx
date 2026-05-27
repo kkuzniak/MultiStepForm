@@ -40,7 +40,7 @@ const Switch = <T extends FieldValues>({
                 'relative w-9.5 h-5 px-1 bg-blue-950 rounded-[10px]',
                 'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:border-transparent',
               )}
-              id="switch"
+              id={name}
               checked={checked}
               onCheckedChange={field.onChange}
             >
@@ -48,7 +48,7 @@ const Switch = <T extends FieldValues>({
             </SwitchPrimitive.Root>
             {rightLabel ? (
               <label
-                htmlFor="switch"
+                htmlFor={name}
                 className={cn(
                   'transition-colors duration-200 pl-6',
                   !checked && 'text-grey-500',
