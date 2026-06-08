@@ -8,7 +8,7 @@ Users move through four steps (personal details → plan → add-ons → summary
 
 ## Live demo
 
-https://multi-page-form-kkuzniak.netlify.app/
+https://multi-step-form-henna-five.vercel.app
 
 ---
 
